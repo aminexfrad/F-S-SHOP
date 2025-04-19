@@ -1,0 +1,152 @@
+:root {
+    --lavender-light: #E6E6FA;
+    --lavender: #9370DB;
+    --lavender-dark: #483D8B;
+    --lavender-accent: #7B68EE;
+    --white: #FFFFFF;
+    --off-white: #F8F8FF;
+    --black: #000000;
+    --gray-light: #EFEFEF;
+    --box-shadow: 0 2px 5px rgba(72, 61, 139, 0.2);
+  }
+  
+
+  body {
+    background-color: var(--lavender-light);
+    color: var(--black);
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  }
+  
+
+  #header {
+    background: linear-gradient(135deg, var(--lavender-dark), var(--lavender));
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+  }
+  
+ 
+  #api, .module h2, .module caption, .inline-group h2 {
+    background: linear-gradient(90deg, var(--lavender-dark), var(--lavender-accent));
+    color: var(--white);
+    padding: 12px 15px;
+    font-weight: 500;
+    border-radius: 4px 4px 0 0;
+    letter-spacing: 0.5px;
+    border: none;
+  }
+  
+
+  .module {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+    border: none;
+    overflow: hidden;
+  }
+  
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: var(--off-white);
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(147, 112, 219, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+
+  .button, input[type=submit], input[type=button], .addlink, .changelink {
+    background-color: var(--lavender);
+    color: var(--white);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover, input[type=submit]:hover, input[type=button]:hover, .addlink:hover, .changelink:hover {
+    background-color: var(--lavender-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .addlink, .changelink {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+
+  .addlink:before {
+    content: "+";
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .changelink:before {
+    content: "✎";
+    margin-right: 5px;
+  }
+  
+
+  .dashboard .module {
+    transition: transform 0.2s ease;
+  }
+  
+  .dashboard .module:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(72, 61, 139, 0.3);
+  }
+  
+
+  .actions {
+    background-color: var(--off-white);
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+  }
+  
+
+  .module h2:contains("Recent actions") {
+    background: linear-gradient(90deg, var(--lavender), var(--lavender-accent));
+  }
+  
+
+  input[type=text], input[type=password], input[type=email], textarea, select {
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 8px 10px;
+    transition: border 0.2s ease;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus, select:focus {
+    border-color: var(--lavender);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(147, 112, 219, 0.2);
+  }
+
+  a:link, a:visited {
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--white);
+  }

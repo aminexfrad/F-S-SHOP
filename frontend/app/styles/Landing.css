@@ -1,0 +1,128 @@
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .text-center.mt-12 {
+    margin-top: 8px;
+  }
+  
+  .text-5xl {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  /* Button adjustments */
+  .px-8.py-3 {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Product carousel adjustments */
+  .mt-20 {
+    margin-top: 3rem;
+  }
+  
+  .flex.justify-center.items-center.gap-4.px-8 {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  
+  /* Make all product cards full width on mobile */
+  .w-1\/5 {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+  
+  /* Remove the varied positioning on mobile */
+  .mt-5, .mt-10 {
+    margin-top: 0.5rem;
+  }
+  
+  /* Adjust aspect ratio for better mobile view */
+  .aspect-\[3\/4\] {
+    aspect-ratio: 1/1;
+    border-radius: 1rem; /* Change from rounded-full to rounded corners */
+  }
+  
+  /* Price tag adjustment */
+  .absolute.bottom-12 {
+    bottom: 1rem;
+    left: 10%;
+    right: 10%;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .flex.justify-center.items-center.gap-4.px-8 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .w-1\/5 {
+    width: 45%;
+    margin: 0.5rem;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+}
+
+/* Additional responsive tweaks */
+@media (max-width: 480px) {
+  .max-w-2xl, .max-w-4xl {
+    max-width: 90%;
+  }
+  
+  .text-5xl {
+    font-size: 1.75rem;
+  }
+  
+  .rounded-full {
+    border-radius: 1rem;
+  }
+  
+  /* Adjust motion animations for mobile */
+  .opacity-0.y-50, .opacity-0.y-30, .opacity-0.y-20,
+  .opacity-0.x-100, .opacity-0.x-50, .opacity-0.x--50, .opacity-0.x--100 {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Custom Navbar adjustments for mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Add hamburger menu styling if needed */
+  .navbar-menu-button {
+    display: block;
+  }
+  
+  .navbar-links {
+    display: none; /* Hide regular links on mobile */
+  }
+  
+  .navbar-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #424874;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-mobile-menu.hidden {
+    display: none;
+  }
+}

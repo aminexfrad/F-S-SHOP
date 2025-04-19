@@ -1,0 +1,160 @@
+.container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White background */
+}
+
+.hero {
+  background: url('/images/hero.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.heroContent {
+  background: rgba(90, 74, 138, 0.7); /* Dark lavender with transparency */
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White text */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff; /* White text */
+}
+
+.ctaButton {
+  background-color: #5a4a8a; /* Dark lavender */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #483a6f; /* Darker lavender */
+}
+
+/* About Section */
+.aboutSection {
+  margin-bottom: 4rem;
+  background-color: #f8f6ff; /* Light lavender */
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #5a4a8a; /* Dark lavender */
+  text-align: center;
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  color: #5a4a8a; /* Dark lavender */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #d8d0f0; /* Light lavender border */
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #5a4a8a; /* Dark lavender */
+}
+
+/* Why Choose Section */
+.whyChooseSection {
+  margin-bottom: 4rem;
+  background-color: #f8f6ff; /* Light lavender */
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 2rem;
+  background-color: #ffffff; /* White */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(90, 74, 138, 0.15); /* Lavender shadow */
+  text-align: center;
+  transition: transform 0.2s ease;
+  border: 1px solid #d8d0f0; /* Light lavender border */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #5a4a8a; /* Dark lavender */
+}
+
+.card p {
+  font-size: 1rem;
+  color: #5a4a8a; /* Dark lavender */
+}
+
+/* Contact Section */
+.contactSection {
+  background-color: #f8f6ff; /* Light lavender */
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #d8d0f0; /* Light lavender border */
+}
+
+.contactInfo {
+  font-size: 1rem;
+  color: #5a4a8a; /* Dark lavender */
+}
+
+.contactInfo a {
+  color: #5a4a8a; /* Dark lavender */
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}

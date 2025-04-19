@@ -1,0 +1,47 @@
+{
+  "name": "ShopifyFR",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@testing-library/user-event": "^14.6.1",
+    "@vercel/analytics": "^1.5.0",
+    "framer-motion": "^12.5.0",
+    "graphql-request": "^7.1.2",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.477.0",
+    "next": "^15.3.0",
+    "next-router-mock": "^0.9.13",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.5.3",
+    "autoprefixer": "^10.4.20"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cypress": "^14.2.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "jsdom": "^26.0.0",
+    "typescript": "^5.8.2",
+    "vercel": "^41.5.0",
+    "vitest": "^3.1.1"
+  }
+}
